@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/myLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="100.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="164dp"
+        android:layout_y="400dp"
+        android:onClick="myclick"
+        android:text="View" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="100.0dip"
+        android:layout_height="40.0dip"
+        android:onClick="myclick"
+        android:layout_x="164dp"
+        android:layout_y="350dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="Delete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="50dp"
+        android:text="Room Id" />
+
+    <EditText
+        android:id="@+id/editRoomId"
+        android:layout_width="150.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="150dp"
+        android:layout_y="50dp"
+        android:ems="10"
+        android:inputType="number"> </EditText>
+
+    <EditText
+        android:id="@+id/editRoomName"
+        android:layout_width="150.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="150dp"
+        android:layout_y="100dp"
+        android:ems="10"
+        android:inputType="text" >
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="100dp"
+        android:text="Room Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="150dp"
+        android:text="Branch" />
+
+    <EditText
+        android:id="@+id/editBranch"
+        android:layout_width="150.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="150dp"
+        android:layout_y="150dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="200dp"
+        android:text="Longitude" />
+
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="150.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="150dp"
+        android:layout_y="200dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/lattitude"
+        android:layout_width="150.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="150dp"
+        android:layout_y="250dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="250dp"
+        android:text="Lattitude" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="300dp"
+        android:text="Distance" />
+
+    <EditText
+        android:id="@+id/distance"
+        android:layout_width="150.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="150dp"
+        android:layout_y="300dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="100.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="36dp"
+        android:layout_y="350dp"
+        android:onClick="myclick"
+        android:gravity="center_vertical|center"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="100.0dip"
+        android:layout_height="40.0dip"
+        android:layout_x="36dp"
+        android:layout_y="400dp"
+        android:onClick="myclick"
+        android:gravity="left|center_vertical|center_horizontal|center"
+        android:text="Update" />
+
+</AbsoluteLayout>

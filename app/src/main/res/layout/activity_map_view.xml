@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycalc.ranjeet.manitnavg.MapView">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#0099FF">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton1"
+                android:background="#0099FF"
+                android:src="@drawable/ic_action_web_site" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Manit Navg."
+                android:id="@+id/textView1"
+                android:textColor="#ffffff"
+                android:textStyle="normal"
+                android:textSize="23dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton3"
+                android:layout_marginLeft="160dp"
+                android:background="#0099FF"
+                android:src="@drawable/ic_action_overflow"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.mycalc.ranjeet.manitnavg.TouchImageView
+        android:id="@+id/img"
+        android:src="@drawable/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout" />
+
+
+</RelativeLayout>

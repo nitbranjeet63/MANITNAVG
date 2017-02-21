@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycalc.ranjeet.manitnavg"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Result"
+            android:label="NAVIGATION" >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.Result" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Response"
+            android:label="NAVIGATION" >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.Response" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".editdatabase"
+            android:label="DATABASE" >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.editDatabase" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".track"
+            android:label="NAVIGATION" >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.track" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Room"
+            android:label="ROOM INFO." >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.Room" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Login" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Maps"
+            android:label="@string/title_activity_maps" >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.Maps" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapView"
+            android:label="@string/title_activity_map_view" >
+            <intent-filter>
+                <action android:name="com.mycalc.ranjeet.manitnavg.MapView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

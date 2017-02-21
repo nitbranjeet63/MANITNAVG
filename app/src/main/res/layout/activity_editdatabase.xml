@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mycalc.ranjeet.manitnavg.editdatabase">
+
+    <TextView
+        android:id="@+id/txtTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="SELECT TABLE"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/btnBranch"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnJunctionRoute"
+        android:layout_alignRight="@+id/btnJunctionRoute"
+        android:layout_below="@+id/txtTable"
+        android:layout_marginTop="29dp"
+        android:onClick="myclick"
+        android:text="Branch" />
+
+    <Button
+        android:id="@+id/btnBuilding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBranch"
+        android:layout_alignRight="@+id/btnJunctionRoute"
+        android:layout_below="@+id/btnBranch"
+        android:onClick="myclick"
+        android:text="Building" />
+
+    <Button
+        android:id="@+id/btnRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnBuilding"
+        android:layout_alignRight="@+id/btnBuilding"
+        android:layout_below="@+id/btnBuilding"
+        android:onClick="myclick"
+        android:text="Room" />
+
+    <Button
+        android:id="@+id/btnRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnRoom"
+        android:layout_alignRight="@+id/btnBranch"
+        android:layout_below="@+id/btnRoom"
+        android:onClick="myclick"
+        android:text="Route" />
+
+    <Button
+        android:id="@+id/btnJunctionRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRoute"
+        android:layout_centerHorizontal="true"
+        android:onClick="myclick"
+        android:text="Junction_Route" />
+
+    <Button
+        android:id="@+id/btnJunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnJunctionRoute"
+        android:layout_alignRight="@+id/btnJunctionRoute"
+        android:layout_below="@+id/btnJunctionRoute"
+        android:onClick="myclick"
+        android:text="Junction" />
+
+</RelativeLayout>

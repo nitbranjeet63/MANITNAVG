@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycalc.ranjeet.manitnavg.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:background="@color/MyLightBlue"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#0099FF">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton"
+                android:background="#0099FF"
+                android:src="@drawable/ic_action_web_site" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Manit Navg."
+                android:id="@+id/textView"
+                android:textColor="#ffffff"
+                android:textStyle="normal"
+                android:textSize="23dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton2"
+                android:layout_marginLeft="160dp"
+                android:background="#0099FF"
+                android:src="@drawable/ic_action_overflow"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="All Possible Path"
+            android:textColor="#ffffff"
+            android:background="#007ACC"
+            android:textStyle="normal"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp" />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:background="@color/MyLightBlue"
+            android:layout_marginLeft="10dp">
+        </ListView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Shortest Path"
+                android:textColorHighlight="#ffff00"
+                android:onClick="myclick"
+                android:background="#007ACC"
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
